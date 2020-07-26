@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "name": "No Feed",
+  "version": "0.1.0",
+  "description": "No Feed",
+  "homepage_url": "https://github.com/rewkha/firefox-no-feed",
+  "icons": {
+    "48": "icons/icon.svg"
+  },
+  "permissions": [
+    "storage",
+		"*://www.facebook.com/*",
+    "*://facebook.com/*",
+		"*://www.youtube.com/*",
+		"*://youtube.com/*",
+    "*://www.vk.com/*",
+    "*://vk.com/*",
+    "*://www.instagram.com/*",
+    "*://instagram.com/*",
+    "*://twitter.com/*",
+    "*://www.twitter.com/*"
+  ],
+  "browser_action": {
+    "default_icon": "icons/icon.svg",
+    "default_popup": "popup/popup.html",
+    "default_title": "No Feed"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "*://facebook.com/*", "*://*.facebook.com/*" ],
+      "js": [ "cs/fb.js" ]
+    },
+    {
+      "matches": [ "*://youtube.com/", "*://*.youtube.com/" ],
+      "js": [ "cs/yt.js" ]
+    },
+    {
+      "matches": [ "*://vk.com/*", "*://*.vk.com/*" ],
+      "js": [ "cs/vk.js" ]
+    },
+    {
+      "matches": [ "*://twitter.com/*", "*://*.twitter.com/*" ],
+      "js": [ "cs/tw.js" ]
+    },
+    {
+      "matches": [ "*://instagram.com/", "*://*.instagram.com/"],
+      "js": [ "cs/in.js" ]
+    }
+  ]
+}
