@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "No Feed",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "No Feed",
   "homepage_url": "https://github.com/rewkha/firefox-no-feed",
   "icons": {
@@ -17,6 +17,11 @@
   ],
   "browser_action": {
     "default_icon": "icons/icon.svg",
+    "theme_icons": [{
+      "light": "icons/icon.svg",
+      "dark": "icons/icon-light.svg",
+      "size": 19
+    }],
     "default_popup": "popup/popup.html",
     "default_title": "No Feed"
   },
