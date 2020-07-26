@@ -6,5 +6,6 @@ Firefox extension for hiding news feed.
 
 - Youtube
 - Facebook
+- Instagram
 - Twitter
 - VK

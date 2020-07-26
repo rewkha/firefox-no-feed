@@ -1,18 +1,18 @@
 {
-  "name": "grayscale-browse",
-  "version": "0.5.2",
+  "name": "no-feed",
+  "version": "0.3.2",
   "description": "Small firefox extension",
   "main": "src/manifest.json",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rewkha/firefox-grayscale.git"
+    "url": "git+https://github.com/rewkha/firefox-no-feed.git"
   },
   "author": "rewkha",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rewkha/firefox-grayscale/issues"
+    "url": "https://github.com/rewkha/firefox-no-feed/issues"
   },
-  "homepage": "https://github.com/rewkha/firefox-grayscale",
+  "homepage": "https://github.com/rewkha/firefox-no-feed",
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.1"

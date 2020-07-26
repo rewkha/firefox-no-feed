@@ -11,6 +11,9 @@ function hide(hide) {
   if (hide == undefined) {
     hide = __no_feed_hide;
   }
+  if (!(window.location.pathname === '/' || window.location.pathname === '/home.php')) {
+    return;
+  }
   const newsFeed = document.querySelector('div[role="feed"]');
   if (hide) {
     if (newsFeed && !newsFeed.hidden) {

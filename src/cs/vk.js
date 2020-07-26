@@ -11,6 +11,9 @@ function hide(hide) {
   if (hide == undefined) {
     hide = __no_feed_hide;
   }
+  if (!(window.location.pathname === '/' || window.location.pathname === '/feed')) {
+    return;
+  }
   const newsFeed = document.querySelector('#feed_rows');
   const nextButton = document.querySelector('#show_more_link');
   if (hide) {
