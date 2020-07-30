@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "No Feed",
-  "version": "0.3.3",
-  "description": "No Feed",
+  "version": "0.4.0",
+  "description": "Hide feed on the most popular social networks",
   "homepage_url": "https://github.com/rewkha/firefox-no-feed",
   "icons": {
     "48": "icons/icon.svg"
