@@ -1,9 +1,9 @@
 let __no_feed_hide;
 
 function hideFeed() {
-  browser.storage.local.get('hide').then((store) => {
-    __no_feed_hide = store.hide || false;
-    hide(store.hide);
+  browser.storage.local.get(['hideTW', 'hideAll']).then((store) => {
+    __no_feed_hide = store.hideAll || store.hideTW || false;
+    hide(__no_feed_hide);
   });
 }
 

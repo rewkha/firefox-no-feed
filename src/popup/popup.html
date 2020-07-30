@@ -9,15 +9,20 @@
       #popup-content {
         padding: 0 10px 15px;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         flex-direction: column;
         display: flex;
         font-family: Helvetica, Arial, sans-serif;
       }
 
-      .div-all {
+      .div-all, .div-small {
         float: left;
         width: 52px;
+      }
+
+      .div-small {
+        padding-left: 10px;
+        width: 42px;
       }
 
       input[type=checkbox]{
@@ -49,12 +54,26 @@
         transition: 0.3s;
       }
 
+      .div-small label {
+        height: 10px;
+        width: 20px;
+        margin-top: 3px;
+      }
+
+      .div-small label:after {
+        width: 8px;
+        height: 8px;
+        top: 1px;
+        left: 1px;
+        border-radius: 8px;
+      }
+
       input:checked + label {
-        background: #9ebe34;
+        background: #e25e11;
       }
 
       input:checked + label:after {
-        left: calc(100% - 2px);
+        left: calc(100% - 1px);
         transform: translateX(-100%);
       }
 
@@ -76,10 +95,39 @@
   <body>
     <div id="popup-content">
       <div>
+        <div class="div-small">
+          <input type="checkbox" id="ToggleFB"/><label for="ToggleFB">Hide Feed</label> 
+        </div>
+        <span>Hide Facebook Feed</span>
+      </div>
+      <div>
+        <div class="div-small">
+          <input type="checkbox" id="ToggleYT"/><label for="ToggleYT">Hide Feed</label> 
+        </div>
+        <span>Hide Youtube Feed</span>
+      </div>
+      <div>
+        <div class="div-small">
+          <input type="checkbox" id="ToggleTW"/><label for="ToggleTW">Hide Feed</label> 
+        </div>
+        <span>Hide Twitter Home Feed</span>
+      </div>
+      <div>
+        <div class="div-small">
+          <input type="checkbox" id="ToggleIN"/><label for="ToggleIN">Hide Feed</label> 
+        </div>
+        <span>Hide Instagram Feed</span>
+      </div><div>
+        <div class="div-small">
+          <input type="checkbox" id="ToggleVK"/><label for="ToggleVK">Hide Feed</label> 
+        </div>
+        <span>Hide VK News</span>
+      </div>
+      <div>
         <div class="div-all">
           <input type="checkbox" id="ToggleAll"/><label for="ToggleAll">Hide Feed</label> 
         </div>
-        <span>Hide Feed</span>
+        <span>Hide All</span>
       </div>
     </div>
     <script type="module" src="popup.js"></script>
