@@ -5,6 +5,8 @@
 
 Firefox extension for hiding news feed.
 
+<img alt="No Feed extension" src="screenshots/1.png" width="400">
+
 # Supported sites
 
 - Youtube
